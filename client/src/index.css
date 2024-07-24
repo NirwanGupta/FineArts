@@ -1,0 +1,84 @@
+@import url('./fonts.css');
+
+:root
+{
+    --Abel:'Abel',cursive;
+    --Anton:'Anton',cursive;
+    --Lexend:'Lexend_Deca',cursive;
+    --Livvic:'Livvic',cursive;
+
+    --text-grey:#3f4954;
+    --text-light:rgba(102, 136, 102, 0.714);
+    --bg-color:#0f0f0f;
+    --white:#ffffFf;
+    --midnight:#104f55;
+
+    --sky :linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+
+}
+
+html,body{
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    
+}
+
+/* #####global class### */
+a{
+    text-decoration: none;
+}
+.body {
+    background: black !important;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.active
+{
+    color:skyblue!important;
+}
+.container
+{
+    margin: 0 2vw;
+}
+.text-gray
+{
+    color: var(--text-grey);
+}
+*{
+    list-style: none;
+    text-transform: capitalize;
+}
+input{
+    text-transform: none;
+}
+h1{   
+    /* font-family: var(--Lexend); */
+    font-size: 2rem;
+}
+h3
+{
+    /* font-family: var(--Abel); */
+    font-size: 1.5rem;
+}
+h2
+{
+    /* font-family: var(--Lexend); */
+
+}
+
+.btn
+{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-family: var(--Livvic);
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: skyblue;
+
+}

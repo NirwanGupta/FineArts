@@ -1,0 +1,79 @@
+.single-allie {
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: var(--transition);
+}
+
+.allie-image img {
+    width: 150px;
+    height: 150px;
+    /* border-radius: 50%; */
+    border-top-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    margin-bottom: 1rem;
+    object-fit: cover;
+    border: 4px solid var(--primary-200);
+    box-shadow: var(--shadow-3);
+    transition: var(--transition);
+}
+
+@media screen and (max-width: 450px) {
+    .allie-image img {
+        width: 130px;
+        height: 130px;
+    }
+    .allie-name{
+        font-size: 25px;
+    }
+}
+
+.allie-image img:hover {
+    transform: scale(1.01);
+    box-shadow: var(--shadow-5);
+}
+
+.allie-name{
+    text-transform: uppercase;
+    color: var(--grey-700);
+    /* color: black; */
+    margin-bottom: 0.5rem;
+    font-family: cursive;
+    font-size: 35px;
+}
+
+.allie-year {
+    text-transform: capitalize;
+    color: var(--primary-700);
+    margin-bottom: 0.5rem;
+    font-size: 24px;
+}
+
+.allie-text {
+    max-width: 35rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    line-height: 2;
+    color: var(--grey-500);
+}
+
+.allie-social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.allie-social-icons a {
+    text-decoration: none;
+    color: var(--primary-500);
+    font-size: 30px;
+    transition: var(--transition);
+}
+
+.allie-social-icons a:hover {
+    color: var(--primary-700);
+    font-size: 32px;
+}

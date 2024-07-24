@@ -1,0 +1,143 @@
+.allies-container {
+    margin: 0 auto;
+    margin-top: 3rem;
+    width: 50vw;
+    max-width: 800px;
+    position: relative;
+    height: 450px;
+    overflow: hidden;
+    /* border: solid red 2px; */
+}
+
+.allies-flex-container {
+    display: flex;
+    gap: 2rem;
+    /* margin-left: 5rem; */
+    margin-bottom: 3rem;
+    /* background: rgb(229, 225, 225, 0.4); */
+    /* margin-right: 5rem; */
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.allies-logo {
+    margin-top: 5rem;
+    width: 30%;
+}
+
+.allies-title {
+    text-align: center;
+    width: 90%;
+    margin: 20px auto;
+    margin-top: 100px;
+    margin-bottom: -5rem;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .allies-logo {
+        display: none;
+    }
+    .allies-container {
+        width: 80vw;
+    }
+    .allies-flex-container {
+        display: block;
+        margin-left: 0;
+    }
+    .allies-left {
+        width: 100%;
+        /* border: solid red 2px; */
+        margin-right: 0;
+    }
+    .allies-form {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* .temp-title {
+    margin-top: 10rem;
+} */
+
+
+.allies-prev, .allies-next {
+    position: absolute;
+    top: 200px;
+    background: var(--primary-500);
+    width: 2rem;
+    height: 2rem;
+    border-color: transparent;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: var(--transition);
+    transform: translateY(-100%);
+}
+
+.allies-prev:hover, .allies-next:hover {
+    background: var(--primary-700);
+    border-radius: 40%;
+}
+
+.allies-icon {
+    transform: translate(0, 10%);
+    color: white;
+}
+
+.allies-next {
+    right: 0;
+}
+
+.allies-prev {
+    left: 0;
+}
+
+.form {
+    margin: 0 auto;
+    margin-top: 6rem;
+    text-align: center; /* Center align content */
+}
+
+.allie-year-input {
+    width: 60%;
+    height: 2.5rem; /* Adjust height for consistency */
+    border-color: transparent;
+    background: var(--grey-200);
+    border-radius: 2px;
+    font-size: 15px;
+    padding: 5px; /* Add padding for better appearance */
+}
+
+.allie-submit-btn {
+    color: var(--white);
+    background: var(--primary-500);
+    border-color: transparent;
+    height: 2.5rem;
+    width: 30%; /* Adjust width for smaller screens */
+    margin-top: 10px; /* Add margin for spacing */
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: var(--transition);
+}
+
+/* @media screen and (max-width: 530px) {
+    .allie-year-input,
+    .allie-submit-btn {
+        width: 80%;
+    }
+    .allie-submit-btn {
+        display: block;
+        margin: 0 auto;
+    }
+} */
+
+.allie-submit-btn:hover {
+    background: var(--primary-700);
+}
+
+
+
+/* .allies-super-container {
+    border: solid red 2px;
+} */

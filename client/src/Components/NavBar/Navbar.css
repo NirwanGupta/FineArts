@@ -1,0 +1,174 @@
+/* Navbar.css */
+
+/* General styles */
+.nav {
+    background-color: white;
+    padding: 0 1vw;
+    height: 70px;
+    overflow: hidden;
+    box-shadow: var(--shadow-1);
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    top: 0;
+    transition: var(--transition);
+}
+
+.logo {
+    float: left;
+    margin-right: 30px;
+    height: 40px;
+    width: 40px;
+}
+
+.nav .nav-brand a {
+    font-family: var(--Abel);
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: #333; /* Dark text color */
+    text-decoration: none;
+    display: flex;
+    align-items: center; /* Center vertically */
+}
+
+.red {
+    color: skyblue; /* Adjusted color for consistency */
+    font-family: cursive;
+    font-size: 15px;
+    transform: translate(20px,25%);
+}
+
+.nav .toggle-collapse {
+    position: absolute;
+    top: 50%;
+    right: 1vw;
+    transform: translateY(-50%);
+    cursor: pointer;
+    display: none; /* Initially hidden on larger screens */
+}
+
+.nav .toggle-collapse .toggle-icons {
+    display: flex;
+    align-items: center;
+}
+
+.nav .toggle-collapse .toggle-icons i {
+    font-size: 1.4rem;
+    color: #333; /* Dark icon color */
+    transition: color 0.3s ease; /* Smooth transition for color */
+}
+
+/* Nav links and items */
+.nav .nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav .nav-items {
+    display: flex;
+    margin: 0;
+    list-style-type: none; /* Remove default list styles */
+}
+
+.nav .nav-items .nav-link {
+    padding: 1.2rem 1rem; /* Adjusted padding for better spacing */
+    /* display: none; */
+    font-size: 1.2rem;
+    position: relative;
+    font-family: var(--Lexend);
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.nav .nav-items .nav-link a {
+    color: #555; /* Medium dark text color */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition for color */
+}
+
+.nav .nav-items .nav-link:hover {
+    background-color: #f0f0f0; /* Light background color on hover */
+}
+
+.nav .nav-items .nav-link:hover a {
+    color: #333; /* Dark text color on hover */
+}
+
+/* Social links */
+.nav .social {
+    margin-left: auto; /* Push social links to the right */
+    display: flex;
+    align-items: center;
+}
+
+.nav .social a {
+    color: #555; /* Medium dark text color */
+    text-decoration: none;
+    margin-left: 1.5rem; /* Adjust spacing between social links */
+    transition: color 0.3s ease; /* Smooth transition for color */
+}
+
+.nav .social a:hover {
+    color: #333; /* Dark text color on hover */
+}
+
+.sidebar-toggle {
+    background: transparent;
+    border-color: transparent;
+    margin: auto 2rem;
+    font-size: 25px;
+    color: var(--grey-700);
+    transform: translateY(20%);
+    cursor: pointer;
+}
+
+.social {
+    position: absolute;
+    right: 3rem;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 810px) {
+    .nav .nav-menu,
+    .nav .nav-items {
+        flex-direction: column;
+        align-items: flex-start; /* Align items to start */
+    }
+
+    .nav .toggle-collapse {
+        display: block; /* Show toggle button on smaller screens */
+    }
+
+    .nav .nav-items {
+        width: 100%; /* Full width for nav items */
+        display: none;
+    }
+
+    .nav .nav-items .nav-link {
+        padding: 1.2rem 2rem; /* Adjusted padding for better touch interaction */
+    }
+
+    .nav .toggle-collapse .toggle-icons i {
+        color: #fff; /* White icon color for contrast */
+    }
+
+    .nav.collapsed {
+        height: 0; /* Collapse menu when not in use */
+    }
+
+    .nav.collapsed .nav-items {
+        display: none; /* Hide items when menu is collapsed */
+    }
+
+    .sidebar-toggle {
+        position: absolute;
+        right: 0;
+    }
+
+    .left {
+        display: none;
+    }
+}
+

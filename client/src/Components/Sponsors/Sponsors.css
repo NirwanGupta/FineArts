@@ -1,0 +1,66 @@
+.workshop-error {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+
+.sponsors-container {
+    margin-top: 5rem;
+    overflow: hidden;
+}
+
+.sponsors-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.show-more-sponsors {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.3rem 1rem;
+    background: var(--primary-500);
+    border-radius: 5px;
+    width: 5.5rem;
+    margin-bottom: 5rem;
+    color: white;
+    font-size: 13px;
+    transition: var(--transition);
+    box-shadow: var(--shadow-2);
+    cursor: pointer;
+}
+
+.show-more-sponsors p {
+    text-align: center;
+    font-size: 15px;
+}
+
+.show-more-sponsors:hover {
+    background: var(--primary-700);
+    box-shadow: var(--shadow-3);
+}
+
+.show-more-media {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.3rem 1rem;
+    background: var(--primary-500);
+    border-radius: 5px;
+    width: 5.5rem;
+    margin-bottom: 5rem;
+    color: white;
+    font-size: 13px;
+    transition: var(--transition);
+    box-shadow: var(--shadow-2);
+    cursor: pointer;
+}
+
+.show-more-media p {
+    text-align: center;
+    font-size: 15px;
+}
+
+.show-more-media:hover {
+    background: var(--primary-700);
+    box-shadow: var(--shadow-3);
+}
