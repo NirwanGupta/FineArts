@@ -54,7 +54,7 @@ export default function ArtGallery() {
         <Base title="artGallery">
             <header>
                 <h1>Art Gallery</h1>
-                <p>finearts</p>
+                <p>fineArts</p>
             </header>
         
             <main>

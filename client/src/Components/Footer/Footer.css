@@ -30,14 +30,15 @@ footer.footer .container .form-element input
     border:none;
     width: 90%;
     margin: 20px auto;
+    border-radius: 3px;
 
 }
 footer.footer .container .form-element button
 {
     background-color: lightblue;
     border-radius: 3px;
-    padding: .6rem 1rem;
-    width: 90%;
+    padding: .5rem;
+    width: 103%;
     margin: 20px auto;
     
 }
@@ -101,4 +102,7 @@ footer.footer .rights a
   padding: 0.3rem 0.5rem;
   font-family: var(--Lexend);
   font-size: 1rem;
+}
+.about-description{
+  color: rgb(197, 196, 196);
 }
