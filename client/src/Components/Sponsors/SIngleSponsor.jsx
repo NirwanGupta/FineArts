@@ -26,18 +26,18 @@ const SingleSponsor = ({ name, image, description }) => {
             </div>
             <div className="singleSponsor-info">
                 <h2>{name}</h2>
-                <div className="singleSponsor-para-container" style={{ maxHeight }} ref={contentRef}>
+                {/* <div className="singleSponsor-para-container" style={{ maxHeight }} ref={contentRef}>
                     <p className={!opened ? 'singleSponsor-para-show' : 'singleSponsor-para-hidden'}>
                         {description.substr(0, 100)}...
                     </p>
                     <p className={opened ? 'singleSponsor-para-show' : 'singleSponsor-para-hidden'}>
                         {description}
                     </p>
-                </div>
+                </div> */}
             </div>
-            <div className="singleSponsor-icon">
+            {/* <div className="singleSponsor-icon">
                 {!opened ? <FaPlus onClick={handleClick} /> : <FaMinus onClick={handleClick} />}
-            </div>
+            </div> */}
         </div>
     );
 }
