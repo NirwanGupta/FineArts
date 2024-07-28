@@ -55,13 +55,13 @@ const Navbar = () => {
                     </div>
                     <div className="social text-grey">
                        {
-                            !isAuthenticated() &&<NavLink activeClassName="active" to="/signin" className="left" >signin</NavLink>
+                            !isAuthenticated() &&<NavLink activeClassName="active" to="/signin" className="left" >SignIn</NavLink>
                        }
                        {
-                            !isAuthenticated() && <NavLink to="/signup" activeClassName="active" className="left" >signup</NavLink>
+                            !isAuthenticated() && <NavLink to="/signup" activeClassName="active" className="left" >SignUp</NavLink>
                        }
                        {
-                            isAuthenticated() && <Link onClick={logout} to="/" className=" left" >Signout</Link>
+                            isAuthenticated() && <Link onClick={logout} to="/" className=" left" >SignOut</Link>
                        }
                     </div>
                     

@@ -1,7 +1,7 @@
-body {
+/* body {
   background: url("../../images/Abract01.png") !important;
   background-size: cover !important;
-}
+} */
 
 .cont {
   width: 50%;
@@ -31,13 +31,16 @@ body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .form input {
-  margin: 10px;
+  /* margin: 10px; */
+  margin: 0 auto;
+  margin-top: 10px;
 }
 .form input[type="text"],
+input[type="email"],
 input[type="password"],
 input[type="number"] {
-  width: 70%;
-  height: 2rem;
+  width: 80%;
+  height: 1rem;
   padding: 10px;
   border-radius: 5px;
 }
@@ -47,7 +50,8 @@ input[type="number"] {
 }
 
 label {
-  color: skyblue;
+  color: rgb(37, 37, 37);
+  font-weight: 100;
 }
 .marker {
   margin: 90px auto;
