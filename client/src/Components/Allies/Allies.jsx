@@ -82,7 +82,7 @@ const Allies = () => {
                     <div className="allies-form">
                         <form onSubmit={filterAllies} className='form'>
                             <label htmlFor="year">
-                                <input type='text' id="year" onChange={(e) => setValue(e.target.value)} className='allie-year-input' placeholder='enter year to filter allies'/>
+                                <input type='text' id="year" onChange={(e) => setValue(e.target.value)} className='allie-year-input' placeholder='Enter Year to Filter Allies'/>
                             </label>
                             <button type="submit" className='allie-submit-btn'>Filter</button>
                         </form>
