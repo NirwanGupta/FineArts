@@ -33,18 +33,19 @@ header .logo {
   cursor: pointer;
 }
 .showcase {
+  margin-top: 70px;
   position: absolute;
-  right: 0;
+  /* right: 0; */
   width: 100%;
   min-height: 100vh;
-  padding: 100px;
+  /* padding: 100px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: #111;
   transition: 0.5s;
   z-index: 2;
-  right: 10%;
+  /* right: 10%; */
 }
 .react-player.active {
   right: 300px;

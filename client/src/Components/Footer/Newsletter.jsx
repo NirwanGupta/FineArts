@@ -25,13 +25,21 @@ export default function Newsletter() {
     }
     return (
         <div className="form-element">
-            <form target="_blank">
+          <form target="_blank">
+            <input
+              type="email"
+              className="email"
+              value={email}
+              onChange={(event) => {
+                setEmail(event.target.value)
+              }}
+              placeholder="Email"
+            />
 
-                <input type="email" className="email" value={email} onChange={(event)=>{setEmail(event.target.value)}} placeholder="Email" />
-
-                <button className="btn form-btn" onClick={submit} >Subscribe</button>
-            </form>
-
+            <button className="btn form-btn" onClick={submit}>
+              Subscribe
+            </button>
+          </form>
         </div>
     )
 }
