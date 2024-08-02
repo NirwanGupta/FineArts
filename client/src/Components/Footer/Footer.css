@@ -1,3 +1,6 @@
+*{
+  box-sizing:border-box;
+}
 footer.footer
 {
     height :100%;
@@ -24,12 +27,16 @@ footer.footer .container
 {
     color:var(--text-grey)
 }
+
+.form-element{
+  width: 100%;
+}
 footer.footer .container .form-element input
 {
-    padding:.5rem 1rem;
+    padding: 1rem 1rem;
     border:none;
-    width: 90%;
-    margin: 20px auto;
+    width: 100%;
+    margin: 20px 0;
     border-radius: 3px;
 
 }
@@ -38,7 +45,7 @@ footer.footer .container .form-element button
     background-color: lightblue;
     border-radius: 3px;
     padding: .5rem;
-    width: 103%;
+    width: 100%;
     margin: 20px auto;
     
 }

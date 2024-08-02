@@ -24,8 +24,8 @@ const SingleSponsor = ({ name, image, description }) => {
             <div className="singleSponsor-image">
                 <img src={image} alt={name} />
             </div>
-            <div className="singleSponsor-info">
-                <h2>{name}</h2>
+            {/* <div className="singleSponsor-info">
+                <h2>{name}</h2> */}
                 {/* <div className="singleSponsor-para-container" style={{ maxHeight }} ref={contentRef}>
                     <p className={!opened ? 'singleSponsor-para-show' : 'singleSponsor-para-hidden'}>
                         {description.substr(0, 100)}...
@@ -34,7 +34,7 @@ const SingleSponsor = ({ name, image, description }) => {
                         {description}
                     </p>
                 </div> */}
-            </div>
+            {/* </div> */}
             {/* <div className="singleSponsor-icon">
                 {!opened ? <FaPlus onClick={handleClick} /> : <FaMinus onClick={handleClick} />}
             </div> */}

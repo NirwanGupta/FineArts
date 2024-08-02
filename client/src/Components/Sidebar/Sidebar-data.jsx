@@ -41,15 +41,15 @@ export const links = [
   },
   {
     id: 5,
-    url: '/ourAllies',
-    text: 'our allies',
-    icon: <GiTeamUpgrade />,
+    url: '/sponsors',
+    text: 'Our Sponsors',
+    icon: <FaPiggyBank />,
   },
   {
     id: 6,
-    url: '/sponsors',
-    text: 'Our Sponsors',
-    icon: <FaPiggyBank />
+    url: '/ourAllies',
+    text: 'our allies',
+    icon: <GiTeamUpgrade />,
   },
   {
     id: 7,
@@ -57,7 +57,7 @@ export const links = [
     text: 'Developers Team',
     icon: <FaUserFriends />,
   },
-];
+]
 
 export const social = [
   {

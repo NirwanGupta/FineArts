@@ -3,25 +3,26 @@
     flex-direction: column;
     align-items: center;
     background-color: #fff;
-    border: 1px solid #ddd;
+    /* border: 1px solid #ddd; */
+    border: none;
     border-radius: 8px;
     padding: 20px;
     margin: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
     transition: box-shadow 0.3s ease;
-    max-width: 300px;
+    max-width: 250px;
     width: 100%;
     z-index: 1;
 }
 
-.singleSponsor-container:hover {
+/* .singleSponsor-container:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
+} */
 
 .singleSponsor-image img {
     width: 100%;
     height: auto;
-    border-radius: 8px;
+    /* border-radius: 8px; */
 }
 
 .singleSponsor-info {
