@@ -4,7 +4,7 @@
     width: 50vw;
     max-width: 800px;
     position: relative;
-    height: 450px;
+    height: 550px;
     overflow: hidden;
     /* border: solid red 2px; */
 }
@@ -14,15 +14,18 @@
     gap: 2rem;
     /* margin-left: 5rem; */
     margin-bottom: 3rem;
+    /* height:  */
     /* background: rgb(229, 225, 225, 0.4); */
     /* margin-right: 5rem; */
     padding: 2rem;
     border-radius: 15px;
+    /* border: solid red 2px; */
 }
 
 .allies-logo {
     margin-top: 5rem;
     width: 30%;
+    
 }
 
 .allies-title {
@@ -33,7 +36,11 @@
     margin-bottom: -5rem;
 }
 
-
+@media screen and (max-width: 500px) {
+    .allies-container {
+        height: 450px;
+    }
+}
 @media screen and (max-width: 1000px) {
     .allies-logo {
         display: none;
@@ -135,6 +142,8 @@
 .allie-submit-btn:hover {
     background: var(--primary-700);
 }
+
+
 
 /* .allies-super-container {
     border: solid red 2px;

@@ -19,6 +19,7 @@ const allieRoutes = require(`./routes/Allies/AlliesRoutes`);
 const workshopRoutes = require(`./routes/Workshop/WorkshopRoutes`);
 const sponsorRoutes = require(`./routes/Sponsors/SponsorsRoutes`);
 const mediaPartnersRoutes = require(`./routes/MediaPartners/MediaPartnersRoutes`);
+const eventsRoutes = require(`./routes/Events/EventsRoutes`);
 
 const fileUpload = require(`express-fileupload`);
 
@@ -63,6 +64,7 @@ app.use('/api', allieRoutes);
 app.use('/api/workshops', workshopRoutes);
 app.use(`/api/sponsors`, sponsorRoutes);
 app.use(`/api/mediaPartners`, mediaPartnersRoutes);
+app.use(`/api/events`, eventsRoutes);
 
 // Serve static files in production
 if (process.env.NODE_ENV === "production") {
