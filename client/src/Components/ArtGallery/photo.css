@@ -1,135 +1,180 @@
-header{
-    margin-top: 90px;
-    font-size: 24px;
-    font-family: 'dokdo',cursive;
-    text-align: center;
-}
-p
-{
-    font-size: 20px;
-}
-.imgcont{
-    width:95%;
-    margin:40px auto;
-    display: grid;
-     grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-.box{
-     padding: 20px;
-    border-radius: 5px;
-    transform: initial;
-    transition: 0.7s transform;
-     margin: 0;
-    overflow: hidden;
-     height:20vw;
-     width: 20vw;
-   
-}
-.box img
-{
-   width: 100%;
-   height: 100%;
-    border-radius: 5px;
-    box-shadow: 2px 2px 10px black;
-    overflow: hidden;
-    transform: initial;
-    transition: 1s transform;
-   
-}
-.title
-{
-    color: skyblue;
-}
-main
-{
-    text-align: center;
-}
-
-.box img:hover{
-    transform: scale(1.1,1.1);
-    transition: .5s transform;
-    
-    z-index: 4;
-}
-.links{
-    clear: both;
-}
-/* body
-{
-   background: url('../../images/Abract01.png')!important;
-    background-repeat: repeat-x !important;
-    background-size: cover !important;
-} */
-
-hr{
-    
-    box-shadow: 10px 5px 5px skyblue;
-    width: 100%;
+/* Base styles */
+body {
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
 }
-/* #popi
-{
-    
-} */
 
-@media  screen and  ( max-width:840px )
-{
-    .imgcont
-    {
-        grid-template-columns: 1fr 1fr 1fr !important;
+/* ArtGallery styles */
+/* Styles for titalArtGallery */
+.titalArtGallery {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 90px;
+}
+
+.titalArtGallery h1 {
+    font-size: 3em;
+    font-family: 'Dokdo', cursive;
+    margin: 0;
+}
+
+.titalArtGallery p {
+    font-size: 1.2em;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding-top: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 840px) {
+    .titalArtGallery h1 {
+        font-size: 2.5em;
     }
-    .box{
- 
-     height:25vw !important;
-     width: 25vw !important;
-     margin: 0 auto;
-     
+    .titalArtGallery p {
+        font-size: 1.1em;
+    }
 }
+
+@media screen and (max-width: 640px) {
+    .titalArtGallery h1 {
+        font-size: 2em;
+    }
+    .titalArtGallery p {
+        font-size: 1em;
+    }
 }
-@media  screen and  ( max-width:640px )
-{
-    .box{
-        height:25vw !important;
+
+@media screen and (max-width: 480px) {
+    .titalArtGallery h1 {
+        font-size: 1.5em;
+    }
+    .titalArtGallery p {
+        font-size: 0.9em;
+    }
+}
+
+header {
+    margin-top: 90px;
+    font-size: 24px;
+    font-family: 'Dokdo', cursive;
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+}
+
+.imgcont {
+    width: 95%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.box {
+    padding: 20px;
+    border-radius: 5px;
+    transform: initial;
+    transition: transform 0.7s;
+    margin: 0;
+    overflow: hidden;
+    height: 20vw;
+    width: 20vw;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px black;
+    transform: initial;
+    transition: transform 1s;
+}
+
+.title {
+    color: skyblue;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.box img:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+    z-index: 4;
+}
+
+.links {
+    clear: both;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 840px) {
+    .imgcont {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+    .box {
+        height: 25vw !important;
+        width: 25vw !important;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .box {
+        height: 25vw !important;
         width: 25vw !important;
     }
 }
 
-@media  screen and  ( max-width:520px )
-{
-    .imgcont
-    {
-        grid-template-columns: 1fr 1fr  !important;
+@media screen and (max-width: 520px) {
+    .imgcont {
+        grid-template-columns: repeat(2, 1fr) !important;
     }
-     .box{
-        height:40vw !important;
+    .box {
+        height: 40vw !important;
         width: 40vw !important;
     }
-
 }
-@media  screen and  ( max-width:480px )
-{
-    .imgcont
-    {
+
+@media screen and (max-width: 480px) {
+    .imgcont {
         grid-template-columns: 1fr !important;
     }
-    .box
-    {
-        height:80vw !important;
+    .box {
+        height: 80vw !important;
         width: 80vw !important;
-    
     }
-    .box:hover
-    {
+    .box:hover {
         transform: none;
     }
-    .pop
-{
-    width:100%;  
-}
-  .blur
-    {
+    .pop {
+        width: 100%;
+    }
+    .blur {
         display: none !important;
-    }  
+    }
+}
 
+/* Uncomment and adjust if needed */
+/* body {
+    background: url('../../images/Abract01.png') !important;
+    background-repeat: repeat-x !important;
+    background-size: cover !important;
+} */
+
+hr {
+    box-shadow: 10px 5px 5px skyblue;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
