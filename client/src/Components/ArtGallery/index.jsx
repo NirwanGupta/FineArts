@@ -52,10 +52,10 @@ export default function ArtGallery() {
 
     return (
         <Base title="artGallery">
-            <header>
+            <div className='titalArtGallery'>
                 <h1>Art Gallery</h1>
-                <p>fineArts</p>
-            </header>
+                {/* <p>fineArts</p> */}
+            </div>
         
             <main>
                 {/* <a name=" wall "></a> */}
@@ -73,7 +73,7 @@ export default function ArtGallery() {
                     
                 </div>
                 {/* <a name="gal"></a> */}
-                <h1 className="title">Art Gallery</h1>
+                <h1 className="title"></h1>
 
                 <div className="imgcont" >
                     {artg.map((data) => <PhotoCard key={data._id}  data={data} />)}
